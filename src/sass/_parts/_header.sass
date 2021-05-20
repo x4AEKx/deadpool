@@ -1,0 +1,82 @@
+.header
+  &-container
+    display: flex
+    justify-content: space-around
+    margin-top: 65px
+    @media screen and ( max-width: 768px )
+      margin-top: 10px
+
+  &-text
+    position: relative
+    z-index: 99
+    color: #ffffff
+    font-family: 'Bebas Neue'
+    &__h1
+      font-size: 100px
+      letter-spacing: -0.005em
+      @media screen and ( max-width: 768px )
+        font-size: 46px 
+    &__p
+      font-size: 40px
+      @media screen and ( max-width: 768px )
+        font-size: 30px 
+    &__p_red
+      color: #e71e6e
+
+  &-img
+    max-width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    margin: 0 auto
+
+  &-menu
+    position: relative
+    z-index: 99
+
+.logo
+  text-align: center
+  &__container
+    margin: 0 auto
+    width: 70px
+    height: 70px
+    @media screen and ( max-width: 768px )
+      width: 45px
+      height: 45px
+  &__img
+    max-width: 100%
+  &__text
+    font-size: 40px
+    line-height: 48px
+    font-weight: 100
+    letter-spacing: -0.005em
+    color: #e71e6e
+    @media screen and ( max-width: 768px )
+      font-size: 25px
+      line-height: 25px
+
+.menu
+  margin-top: 34px
+  @media screen and ( max-width: 768px )
+    margin-top: 5px
+  &__item
+    text-align: center
+    width: 165px
+    height: 25px
+    background-color: #e71e6e
+    @media screen and ( max-width: 768px )
+      height: 22px
+  &__item + &__item
+    margin-top: 5px
+    @media screen and ( max-width: 768px )
+      margin-top: 2px
+  &__link
+    font-size: 20px
+    line-height: 29px
+    font-weight: 100
+    letter-spacing: -0.005em
+    color: #ffffff
+    @media screen and ( max-width: 768px )
+      line-height: 22px
+

@@ -50,6 +50,10 @@ function scripts() {
 		.pipe(dest("./docs/scripts/"))
 }
 
+function fonts() {
+	return src("./src/fonts/**/*").pipe(dest("./docs/fonts/"))
+}
+
 function imageMinify() {
 	return src("src/img/*.{gif,png,jpg,svg,webp}")
 		.pipe(
@@ -81,9 +85,8 @@ function serve() {
 	watch("./src/sass/**/*.sass", series(sass)).on("change", browserSync.reload)
 	watch("./src/scripts/**/*.js", series(scripts)).on("change", browserSync.reload)
 	watch("./src/img/*.{gif,png,jpg,svg,webp}", series(imageMinify)).on("change", browserSync.reload)
-	watch("src/pages/**/*.pug", series(pug)).on("change", browserSync.reload)
 	watch("*.html").on("change", browserSync.reload)
 }
 
-export const build = series(clear, parallel(pug, sass, imageMinify, scripts))
-export const dev = series(clear, parallel(pug, sass, imageMinify, scripts), serve)
+export const build = series(clear, parallel(pug, sass, fonts, imageMinify, scripts))
+export const dev = series(clear, parallel(pug, sass, fonts, imageMinify, scripts), serve)
