@@ -1,0 +1,27 @@
+{
+  "name": "deadpool",
+  "version": "1.0.0",
+  "description": "creating Deadpool landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/x4AEKx/deadpool.git"
+  },
+  "keywords": [
+    "Pug",
+    "Sass",
+    "Gulp"
+  ],
+  "author": "Dmitry '4aek' Vlasov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/x4AEKx/deadpool/issues"
+  },
+  "homepage": "https://github.com/x4AEKx/deadpool#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
